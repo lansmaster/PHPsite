@@ -2,7 +2,6 @@
 session_start();
 include("./includes/connect.php");
 
-//Получение предстоящих заданий из базы данных
 $query = "SELECT * FROM assigments WHERE deadline >= CURDATE() ORDER BY deadline";
 $result = $conn->query($query);
 
@@ -25,7 +24,6 @@ $conn->close();
         <h3>Предстоящие задания</h3>
 
         <?php
-        // Вывод списка предстоящих заданий
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo "<p><strong>Название:</strong> " .$row["title"] . "</p>";
