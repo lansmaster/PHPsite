@@ -15,10 +15,12 @@ $conn->close();
     <title>Добавление заданий</title>
 </head>
 <body>
-
+<?php 
+        include("./templates/header.php");
+    ?>
     <div class="container">
         <h2>Добавление заданий</h2>
-        <form action="dashboard.php" method="post">
+        <form  method="post">
             <label for="title">Название:</label>
             <input type="text" id="title" name="title" required>
 

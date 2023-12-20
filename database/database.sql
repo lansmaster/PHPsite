@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS `training`;
-USE `training`;
+CREATE DATABASE IF NOT EXISTS `database`;
+USE `database`;
 
 CREATE TABLE IF NOT EXISTS `users` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,

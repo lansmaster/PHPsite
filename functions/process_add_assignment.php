@@ -1,4 +1,5 @@
 <?php
+include("./includes/connect.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST["title"];
     $deadline = $_POST["deadline"];
@@ -8,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($query) === TRUE) {
         echo "Задание успешно добавлено";
+        header("Location: http://phpsite/Student_Dash.php");
     } else {
         echo "Ошибка добавления задания: " . $conn->error;
     }

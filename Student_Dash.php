@@ -18,7 +18,9 @@ $conn->close();
     <title>Студенческий дашборд</title>
 </head>
 <body>
-
+    <?php 
+        include("./templates/header.php");
+    ?>
     <div class="container">
         <h2>Студенческий дашборд</h2>
         <h3>Предстоящие задания</h3>

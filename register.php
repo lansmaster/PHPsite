@@ -15,7 +15,9 @@ $conn->close();
     <title>Регистрация</title>
 </head>
 <body>
-
+<?php 
+        include("./templates/header.php");
+    ?>
     <div class="container">
         <h2>Регистрация</h2>
 
