@@ -15,9 +15,6 @@ $conn->close();
     <title>Вход</title>
 </head>
 <body>
-<?php 
-        include("./templates/header.php");
-    ?>
     <div class="container">
         <h2>Вход</h2>
         <form action="login.php" method="post">
